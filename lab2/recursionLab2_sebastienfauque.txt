@@ -1,0 +1,16 @@
+# Stack example for recursion dept 3.
+
+# pascals_triangle(3)
+
+# top layer: hits ending case
+# current_triangle = {list: 3} [[1], [1, 1], [1, 2, 1]]
+# n = {int} 3
+# second from top layer:
+# current_triangle = {list: 2} [[1], [1, 1]]
+# n = {int} 3
+# third from top layer:
+# current_triangle = {list: 1} [[1]]
+# n = {int} 3
+# original call:
+# current_triangle = {list: 0} []
+# n = {int} 3
