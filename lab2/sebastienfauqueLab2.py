@@ -31,5 +31,6 @@ def pascals_triangle(n: int, current_triangle: list = []):
 
 
 
+# Each iteration of the function has time complexity of n
 
 
