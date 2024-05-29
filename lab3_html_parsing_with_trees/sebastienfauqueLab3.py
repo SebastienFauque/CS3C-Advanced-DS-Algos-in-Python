@@ -63,7 +63,7 @@ class ListCollector(HTMLParser):
             # Add the text data to the current list and remove whitespace.
             self.current_list.append(data.strip())
 
-    def getLists(self) -> list[str]:
+    def getLists(self) -> list[list[str]]:
         """
         Get the lists collected from the HTML document.
 
@@ -73,30 +73,3 @@ class ListCollector(HTMLParser):
                              of the items.
         """
         return self.lists
-
-# Example usage
-if __name__ == "__main__":
-    # Sample HTML content for testing
-    html_content = """
-    <html>
-    <head><title>Test HTML</title></head>
-    <body>
-        <ul>
-            <li>Web for All</li>
-            <li>Web on Everything</li>
-        </ul>
-        <ol>
-            <li>First item</li>
-            <li>Second item</li>
-        </ol>
-    </body>
-    </html>
-    """
-
-    # Initialize and feed the parser
-    collector = ListCollector()
-    collector.feed(html_content)
-
-    # Get and print the lists
-    lists = collector.getLists()
-    print(lists)  # Output should be [['Web for All', 'Web on Everything'], ['First item', 'Second item']]
