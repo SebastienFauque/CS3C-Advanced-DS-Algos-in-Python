@@ -1,4 +1,3 @@
-import pytest
 from sebastienfauqueLab3 import ListCollector
 
 def test_list_collector_example():
@@ -24,6 +23,8 @@ def test_list_collector_example():
     # Initialize and feed the HTML to the  parser
     collector = ListCollector()
     collector.feed(html_content)
+    # print("Example List: ", collector.getLists())
+    # output: Example List:  [['Web for All', 'Web on Everything']]
 
     # Expected output
     expected_lists = [
@@ -67,6 +68,10 @@ def test_list_collector():
     # Initialize and feed the HTML to the  parser
     collector = ListCollector()
     collector.feed(html_content)
+
+    # print("Demo List: ", collector.getLists())
+    # Output: Demo List:  [['An item', 'Another', 'And another one'],
+    # ['Item one', 'Item two', 'Item three', 'Item four']]
 
     # Expected output
     expected_lists = [
