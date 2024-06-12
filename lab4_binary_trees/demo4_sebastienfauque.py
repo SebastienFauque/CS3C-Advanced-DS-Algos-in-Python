@@ -1,7 +1,7 @@
 """
 3C Lab4 Student Driver
 Topic: Binary Trees
-Applicaiton: Finding Max in binary tree
+Application: Finding Max in binary tree
 Description: Test driver and demo code for implementation of BST. Contains
              tests using Pytest and demo output.
 Development environment: Ubuntu 20.04
